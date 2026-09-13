@@ -25,7 +25,7 @@ const MobileBottomNav = ({ setIsModalOpen }) => {
 
                 <MobileNavItem key={item.path} item={item} />
             ))}
-            <NewEntryButton />
+            <NewEntryButton setIsModalOpen={setIsModalOpen}      />
 
             {/* right 2 items */}
             {rightSide.map((item, i) => (

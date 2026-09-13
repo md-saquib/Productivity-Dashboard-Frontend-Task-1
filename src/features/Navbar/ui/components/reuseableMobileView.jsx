@@ -44,7 +44,7 @@ export const MobileNavItem = ({ item }) => {
 
 {/* Center FAB — "New Entry" */ }
 
-export const NewEntryButton = () =>(<button
+export const NewEntryButton = ({ setIsModalOpen }) => (<button
     onClick={() => setIsModalOpen(true)}
     title='New Entry'
     className='  relative -top-4  flex flex-col items-center justify-center  w-14 h-14 rounded-full shrink-0 bg-[var(--primary-container)] text-[var(--on-primary-container)]  shadow-lg shadow-[var(--primary-container)]/40   border-4 border-[var(--surface)]       active:scale-95 transition-transform    '
